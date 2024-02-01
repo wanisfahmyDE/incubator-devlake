@@ -17,4 +17,5 @@
 #
 
 cd "$(dirname "$0")"
+poetry env use 3.11
 poetry install
