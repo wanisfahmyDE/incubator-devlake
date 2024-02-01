@@ -113,7 +113,7 @@ RUN cd /usr/local/deps/target/lib && \
     done
 
 
-FROM python:3.9-slim-bullseye as base
+FROM python:3.11-slim-bullseye as base
 
 RUN apt-get update && \
     apt-get install -y python3-dev python3-pip tar curl libssh2-1 zlib1g libffi-dev default-libmysqlclient-dev libpq-dev tini && \
