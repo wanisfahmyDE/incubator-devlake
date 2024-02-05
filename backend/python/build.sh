@@ -24,6 +24,7 @@ else
 fi
 
 for plugin_dir in $(ls -d */build.sh); do
+  poetry env use python3.11.0
   echo "Building remote plugin: $plugin_dir" &&\
   $plugin_dir
   exit_code=$?
